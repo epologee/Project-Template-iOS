@@ -138,14 +138,7 @@
 	<key>Definitions</key>
 	<dict>
 		<key>*:comments</key>
-		<string>//
-//  ___FILENAME___
-//  ___PACKAGENAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
-//
-</string>
+		<string>//  Created by ___FULLUSERNAME___ on ___DATE___.</string>
 		<key>*:import:*</key>
 		<string>#import &quot;___*___&quot;
 </string>
@@ -155,10 +148,7 @@
 		<key>___PACKAGENAME___-Prefix.pch</key>
 		<dict>
 			<key>Beginning</key>
-			<string>//
-// Prefix header for all source files of the &apos;___PACKAGENAME___&apos; target in the &apos;___PACKAGENAME___&apos; project
-//
-</string>
+			<string>// Prefix header for all source files</string>
 			<key>Group</key>
 			<string>Supporting Files</string>
 			<key>TargetIndices</key>
