@@ -4,9 +4,10 @@
 <dict>
 	<key>Ancestors</key>
 	<array>
-		<string>com.epologee.custom-templates.cocoaTouchApplication</string>
-		<string>com.epologee.custom-templates.coreDataCocoaTouchApplication</string>
-		<string>com.epologee.template.project.Theming</string>
+		<string>com.epologee.template.modifications.cocoaTouchApplication</string>
+		<string>com.epologee.template.modifications.coreDataCocoaTouchApplication</string>
+		<string>com.epologee.template.additions.Theming</string>
+		<string>com.epologee.template.additions.CocoaPods</string>
 	</array>
 	<key>Concrete</key>
 	<true/>
@@ -32,7 +33,7 @@
 	<key>Description</key>
 	<string>This template provides a starting point for any application. It provides just an application delegate and a window.</string>
 	<key>Identifier</key>
-	<string>com.epologee.custom-templates.emptyApplication</string>
+	<string>com.epologee.template.modifications.emptyApplication</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>

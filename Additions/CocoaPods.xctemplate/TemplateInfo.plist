@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.epologee.template.additions.CocoaPods</string>
+	<key>Name</key>
+	<string>CocoaPods</string>
+	<key>Ancestors</key>
+	<array>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>../Podfile:platform</string>
+		<string>../Podfile:defaults</string>
+		<string>../Podfile:integrationsKIF</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>../Podfile:platform</key>
+		<string>platform :ios, '5.1'</string>
+		<key>../Podfile:defaults</key>
+				<string>
+pod 'TestFlightSDK'
+pod 'AFNetworking'
+pod 'TwelveTwentyToolkit/Logging'
+</string>
+		<key>../Podfile:integrationsKIF</key>
+		<string>target :Integrations do
+	pod 'KIF'
+end</string>
+	</dict>
+	<key>Description</key>
+	<string>Add CocoaPods to the project, with the necessary default specs.</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Options</key>
+	<array>
+	</array>
+	<key>SortOrder</key>
+	<integer>1</integer>
+</dict>
+</plist>

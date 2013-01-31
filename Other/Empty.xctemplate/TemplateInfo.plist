@@ -5,7 +5,7 @@
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Identifier</key>
-	<string>com.epologee.custom-templates.emptyProject</string>
+	<string>com.epologee.template.modifications.emptyProject</string>
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>

@@ -3,10 +3,10 @@
 <plist version="1.0">
 	<dict>
 		<key>Identifier</key>
-		<string>com.epologee.template.project.Theming</string>
+		<string>com.epologee.template.additions.Theming</string>
 		<key>Ancestors</key>
 		<array>
-			<string>com.epologee.custom-templates.cocoaTouchApplication</string>
+			<string>com.epologee.template.modifications.cocoaTouchApplication</string>
 		</array>
 		<key>Kind</key>
 		<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>

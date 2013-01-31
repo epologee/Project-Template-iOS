@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.epologee.custom-templates.iOSReferenceCounting</string>
+	<string>com.epologee.template.modifications.iOSReferenceCounting</string>
 	<key>InjectionTargets</key>
 	<array>
-		<string>com.epologee.custom-templates.iPhoneBase</string>
+		<string>com.epologee.template.modifications.iPhoneBase</string>
 	</array>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>

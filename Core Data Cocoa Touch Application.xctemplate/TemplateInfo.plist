@@ -4,10 +4,10 @@
 <dict>
 	<key>Ancestors</key>
 	<array>
-		<string>com.epologee.custom-templates.cocoaTouchApplication</string>
+		<string>com.epologee.template.modifications.cocoaTouchApplication</string>
 	</array>
 	<key>Identifier</key>
-	<string>com.epologee.custom-templates.coreDataCocoaTouchApplication</string>
+	<string>com.epologee.template.modifications.coreDataCocoaTouchApplication</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Options</key>

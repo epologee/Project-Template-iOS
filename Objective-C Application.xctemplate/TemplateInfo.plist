@@ -5,10 +5,10 @@
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Identifier</key>
-	<string>com.epologee.custom-templates.objectiveCApplication</string>
+	<string>com.epologee.template.modifications.objectiveCApplication</string>
 	<key>Ancestors</key>
 	<array>
-		<string>com.epologee.custom-templates.bundleBase</string>
+		<string>com.epologee.template.modifications.bundleBase</string>
 	</array>
 	<key>Targets</key>
 	<array>

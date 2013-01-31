@@ -24,7 +24,7 @@
 &lt;/array&gt;</string>
 	</dict>
 	<key>Identifier</key>
-	<string>com.epologee.custom-templates.iPhoneBase</string>
+	<string>com.epologee.template.modifications.iPhoneBase</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Platforms</key>

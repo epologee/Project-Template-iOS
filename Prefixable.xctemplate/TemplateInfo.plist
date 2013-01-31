@@ -5,7 +5,7 @@
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Identifier</key>
-	<string>com.epologee.custom-templates.prefixable</string>
+	<string>com.epologee.template.modifications.prefixable</string>
 	<key>Options</key>
 	<array>
 		<dict>

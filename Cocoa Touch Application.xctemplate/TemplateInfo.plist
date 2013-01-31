@@ -4,12 +4,12 @@
 <dict>
 	<key>Ancestors</key>
 	<array>
-		<string>com.epologee.custom-templates.objectiveCApplication</string>
-		<string>com.epologee.custom-templates.iPhoneBase</string>
-		<string>com.epologee.custom-templates.prefixable</string>
+		<string>com.epologee.template.modifications.objectiveCApplication</string>
+		<string>com.epologee.template.modifications.iPhoneBase</string>
+		<string>com.epologee.template.modifications.prefixable</string>
 	</array>
 	<key>Identifier</key>
-	<string>com.epologee.custom-templates.cocoaTouchApplication</string>
+	<string>com.epologee.template.modifications.cocoaTouchApplication</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
@@ -191,7 +191,7 @@
 						<array>
 							<dict>
 								<key>Identifier</key>
-								<string>com.epologee.custom-templates.cocoaTouchApplicationUnitTestBundle</string>
+								<string>com.epologee.template.modifications.cocoaTouchApplicationUnitTestBundle</string>
 								<key>Name</key>
 								<string>___PACKAGENAME___Tests</string>
 							</dict>
