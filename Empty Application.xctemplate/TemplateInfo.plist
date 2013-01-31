@@ -6,6 +6,7 @@
 	<array>
 		<string>com.epologee.custom-templates.cocoaTouchApplication</string>
 		<string>com.epologee.custom-templates.coreDataCocoaTouchApplication</string>
+		<string>com.epologee.template.project.Theming</string>
 	</array>
 	<key>Concrete</key>
 	<true/>
