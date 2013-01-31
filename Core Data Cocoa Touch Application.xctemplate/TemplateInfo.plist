@@ -46,12 +46,6 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 </string>
-						<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillTerminate:comments</key>
-						<string>// Saves changes in the application's managed object context before the application terminates.
-</string>
-						<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillTerminate:save</key>
-						<string>[self saveContext];
-</string>
 						<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:coreData</key>
 						<string>- (void)saveContext
 {
