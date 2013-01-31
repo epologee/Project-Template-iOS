@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.epologee.custom-templates.prefixable</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>classPrefix</string>
+			<key>Name</key>
+			<string>Class Prefix</string>
+			<key>Description</key>
+			<string>The prefix to prepend to all created classes</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Placeholder</key>
+			<string>XYZ</string>
+		</dict>
+	</array>
+</dict>
+</plist>

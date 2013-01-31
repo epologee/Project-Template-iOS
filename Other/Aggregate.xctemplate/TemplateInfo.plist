@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.epologee.custom-templates.aggregate</string>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This target is used to aggregate other targets together.</string>
+	<key>TargetOnly</key>
+	<true/>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Product Name</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Description</key>
+			<string>Your new product&apos;s name</string>
+			<key>EmptyReplacement</key>
+			<string>ProductName</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>___PACKAGENAME___</string>
+			<key>TargetType</key>
+			<string>Aggregate</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

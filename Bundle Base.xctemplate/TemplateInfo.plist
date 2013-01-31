@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.epologee.custom-templates.bundleBase</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.epologee.custom-templates.base</string>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>SharedSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>___PACKAGENAME___/___PACKAGENAME___-Info.plist</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>___PACKAGENAME___/___PACKAGENAME___-Prefix.pch</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAME___-Info.plist:CFBundleIdentifier</string>
+		<string>en.lproj/InfoPlist.strings:Instructions</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>___PACKAGENAME___-Info.plist</key>
+		<dict>
+			<key>Beginning</key>
+			<string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+</string>
+			<key>End</key>
+			<string>&lt;/dict&gt;
+&lt;/plist&gt;</string>
+			<key>Indent</key>
+			<integer>1</integer>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>TargetIndices</key>
+			<array/>
+			<key>SubstituteMacros</key>
+			<true/>
+		</dict>
+		<key>___PACKAGENAME___-Info.plist:CFBundleIdentifier</key>
+		<string>&lt;key&gt;CFBundleIdentifier&lt;/key&gt;
+&lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.${PRODUCT_NAME:rfc1034identifier}&lt;/string&gt;
+</string>
+		<key>en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+		</dict>
+		<key>en.lproj/InfoPlist.strings:Instructions</key>
+		<string>/* Localized versions of Info.plist keys */
+</string>
+	</dict>
+</dict>
+</plist>
