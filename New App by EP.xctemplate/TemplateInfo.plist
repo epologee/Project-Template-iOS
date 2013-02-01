@@ -11,6 +11,17 @@
 	</array>
 	<key>Concrete</key>
 	<true/>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:3</string>
+		<string>en.lproj/Localizable.strings</string>
+		<string>Classes/Localization/___VARIABLE_classPrefix:identifier___LocalizedStrings.h</string>
+		<string>Classes/Base/___VARIABLE_classPrefix:identifier___BaseViewController.h</string>
+		<string>Classes/Base/___VARIABLE_classPrefix:identifier___BaseViewController.m</string>
+		<string>Classes/Root/___VARIABLE_classPrefix:identifier___RootViewController.h</string>
+		<string>Classes/Root/___VARIABLE_classPrefix:identifier___RootViewController.m</string>
+		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___RootViewController.h</string>
+	</array>
 	<key>Definitions</key>
 	<dict>
 		<key>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions</key>
@@ -18,16 +29,78 @@
 			<key>Beginning</key>
 			<string>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	___VARIABLE_classPrefix:identifier___RootViewController *rootViewController = [[___VARIABLE_classPrefix:identifier___RootViewController alloc] init];
+	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+
     self.window = ___RP___[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]___AR___;
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];</string>
+    self.window.backgroundColor = [UIColor whiteColor];
+	self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+</string>
 			<key>End</key>
-			<string>    [self.window makeKeyAndVisible];
+			<string>
     return YES;
 }
 </string>
 			<key>Indent</key>
 			<integer>1</integer>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Localizable.strings</string>
+		</dict>
+		<key>Classes/Localization/___VARIABLE_classPrefix:identifier___LocalizedStrings.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>Localization</string>
+			</array>
+			<key>Path</key>
+			<string>LocalizedStrings.h</string>
+		</dict>
+		<key>Classes/Base/___VARIABLE_classPrefix:identifier___BaseViewController.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>Base</string>
+			</array>
+			<key>Path</key>
+			<string>BaseViewController.h</string>
+		</dict>
+		<key>Classes/Base/___VARIABLE_classPrefix:identifier___BaseViewController.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>Base</string>
+			</array>
+			<key>Path</key>
+			<string>BaseViewController.m</string>
+		</dict>
+		<key>Classes/Root/___VARIABLE_classPrefix:identifier___RootViewController.h</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>Root</string>
+			</array>
+			<key>Path</key>
+			<string>RootViewController.h</string>
+		</dict>
+		<key>Classes/Root/___VARIABLE_classPrefix:identifier___RootViewController.m</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>Classes</string>
+				<string>Root</string>
+			</array>
+			<key>Path</key>
+			<string>RootViewController.m</string>
 		</dict>
 	</dict>
 	<key>Description</key>
@@ -36,9 +109,5 @@
 	<string>com.epologee.template.modifications.emptyApplication</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
-	<key>Nodes</key>
-	<array>
-		<string>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:3</string>
-	</array>
 </dict>
 </plist>

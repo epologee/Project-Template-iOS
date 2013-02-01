@@ -51,7 +51,8 @@
 		<key>SharedSettings</key>
 		<dict>
 			<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-			<string>latest_iphoneos</string>
+			<string>5.1</string>
+			<!-- default value is: latest_iphoneos -->
 		</dict>
 	</dict>
 </dict>
