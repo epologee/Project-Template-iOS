@@ -37,10 +37,6 @@ pod 'TestFlightSDK'
 pod 'AFNetworking'
 pod 'TwelveTwentyToolkit/Logging'
 </string>
-		<key>../Podfile:integrationsKIF</key>
-		<string>target :Integrations do
-	pod 'KIF'
-end</string>
 	</dict>
 	<key>Description</key>
 	<string>Add CocoaPods to the project, with the necessary default specs.</string>
