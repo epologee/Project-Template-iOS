@@ -11,12 +11,24 @@
 	</array>
 	<key>Nodes</key>
 	<array>
+		<string>../Podfile</string>
 		<string>../Podfile:platform</string>
 		<string>../Podfile:defaults</string>
 		<string>../Podfile:integrationsKIF</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
+		<key>../Podfile</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>-delete or reimport this group-</string>
+				<string>CocoaPods</string>
+			</array>
+			<!-- remove from the 'Copy Bundle Resources' build phase --> 
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
 		<key>../Podfile:platform</key>
 		<string>platform :ios, '5.1'</string>
 		<key>../Podfile:defaults</key>

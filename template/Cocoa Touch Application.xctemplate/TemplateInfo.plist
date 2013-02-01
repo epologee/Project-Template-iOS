@@ -85,6 +85,8 @@
 			</array>
 			<key>Path</key>
 			<string>gitkeep</string>
+			<key>TargetIndices</key>
+			<array/>
 		</dict>
 		<key>___PACKAGENAME___-Info.plist:iPhone</key>
 		<string>&lt;key&gt;CFBundleDisplayName&lt;/key&gt;
