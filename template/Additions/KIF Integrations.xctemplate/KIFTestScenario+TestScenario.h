@@ -2,7 +2,7 @@
 
 /**
 
-	Note:	You need to manually copy your main target after the project is created, 
+	Note:	You need to manually duplicate your main target after the project is created, 
 			suffix it with ' Integrations' (mind the space). Go into the new target's
 			build settings and determine a new value for PRODUCT_NAME (it defaults 
 			to something that ends on ' copy') and have the Info.plist file property

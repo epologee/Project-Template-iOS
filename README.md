@@ -1,4 +1,4 @@
-#Project Template iOS
+#An Xcode Project Template for iOS
 This repository contains an Xcode Project Template for new iOS apps (currently set to ios 5.1 by default), including a default set of libraries (installed via the CocoaPods project), Apple-esque theming stubs and a folder structure suited for small and large projects alike. The template is compatible with Xcode 4.6.
 
 ![Example of the project structure](documentation/example.png "screenshot")
@@ -20,3 +20,11 @@ The \*Theme classes in the project template are based on the WWDC 2012 presentat
 
 ##.gitkeep
 When using git as your versioning control system, it is impossible to add empty folders to the git repository. The .gitkeep files (gitkeep without the dot '.' in the xctemplate directories) you find in the project are there to force git to add the containing directories to the project. You can remove the .gitkeep files from the Xcode project anytime after step 3. See [this StackOverflow post](http://stackoverflow.com/a/7229996/432782) for more information.
+
+##KIF integration testing
+The template contains a first few steps towards out-of-the-box support for [Square's KIF integration testing framework](https://github.com/square/KIF). One of the necessities for KIF is that you have a second target next to your actual app target. I haven't yet figured out how to achieve this automatically, so it requires you to perform some manual steps after creating the project.
+
+You need to manually duplicate your main target, suffix it with ' Integrations' (mind the leading space). Go into the new target's build settings and determine a new value for PRODUCT_NAME (it defaults to something that ends on ' copy') and have the Info.plist file property point to the original plist of your application.
+			
+When all this is done, run 'pod install' or 'pod update' and your integration testing is ready to go.
+I have a [Stack Overflow question](http://stackoverflow.com/q/14651166/432782) going to get to the bottom of automating this, but for now a little handiwork is involved.
