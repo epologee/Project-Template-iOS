@@ -52,7 +52,7 @@
 		<dict>
 			<key>IPHONEOS_DEPLOYMENT_TARGET</key>
 			<string>5.1</string>
-			<!-- default value is: latest_iphoneos -->
+			<!-- Remember to update the reference in the README.md after changing this value. The original value used to be: latest_iphoneos -->
 		</dict>
 	</dict>
 </dict>

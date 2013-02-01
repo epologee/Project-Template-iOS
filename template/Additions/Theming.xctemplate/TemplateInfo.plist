@@ -19,9 +19,15 @@
 			<string>Classes/Theme/___VARIABLE_classPrefix:identifier___Theme.m</string>
 			<string>Classes/Theme/___VARIABLE_classPrefix:identifier___RegularTheme.h</string>
 			<string>Classes/Theme/___VARIABLE_classPrefix:identifier___RegularTheme.m</string>
+			<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___Theme.h</string>
+			<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___RegularTheme.h</string>
+			<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:currentTheme</string>
 		</array>
 		<key>Definitions</key>
 		<dict>
+			<key>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:currentTheme</key>
+			<string>[___VARIABLE_classPrefix:identifier___Theme setCurrentTheme:[[___VARIABLE_classPrefix:identifier___RegularTheme alloc] init]];
+			</string>
 			<key>Classes/Theme/___VARIABLE_classPrefix:identifier___Theme.h</key>
 			<dict>
 				<key>Group</key>

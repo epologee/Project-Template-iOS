@@ -21,6 +21,7 @@
 		<string>Classes/Root/___VARIABLE_classPrefix:identifier___RootViewController.h</string>
 		<string>Classes/Root/___VARIABLE_classPrefix:identifier___RootViewController.m</string>
 		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___RootViewController.h</string>
+		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:createWindow</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -29,13 +30,6 @@
 			<key>Beginning</key>
 			<string>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	___VARIABLE_classPrefix:identifier___RootViewController *rootViewController = [[___VARIABLE_classPrefix:identifier___RootViewController alloc] init];
-	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
-
-    self.window = ___RP___[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]___AR___;
-    self.window.backgroundColor = [UIColor whiteColor];
-	self.window.rootViewController = navigationController;
-    [self.window makeKeyAndVisible];
 </string>
 			<key>End</key>
 			<string>
@@ -45,6 +39,15 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
+		<key>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:createWindow</key>
+		<string>___VARIABLE_classPrefix:identifier___RootViewController *rootViewController = [[___VARIABLE_classPrefix:identifier___RootViewController alloc] init];
+UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+
+self.window = ___RP___[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]___AR___;
+self.window.backgroundColor = [UIColor whiteColor];
+self.window.rootViewController = navigationController;
+[self.window makeKeyAndVisible];
+</string>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>Group</key>

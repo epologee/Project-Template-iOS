@@ -26,12 +26,12 @@
 
 + (UIFont *)___VARIABLE_classPrefix:identifier___BoldFontWithSize:(CGFloat)fontSize
 {
-	return [self safeFontWithName:@"CenturyGothic-Bold" fontSize:fontSize];
+	return [self safeFontWithName:@"Helvetica-Bold" fontSize:fontSize];
 }
 
 + (UIFont *)___VARIABLE_classPrefix:identifier___RegularFontWithSize:(CGFloat)fontSize
 {
-	return [self safeFontWithName:@"CenturyGothic" fontSize:fontSize];
+	return [self safeFontWithName:@"Helvetica" fontSize:fontSize];
 }
 
 @end
@@ -44,7 +44,9 @@
     
     if (self)
     {
-        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"Color-Blue.png"] forBarMetrics:UIBarMetricsDefault];
+		/*
+		// Add custom appearance selectors here, like:
+        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"Solid-green.png"] forBarMetrics:UIBarMetricsDefault];
 
         NSDictionary* attrs = @{
             UITextAttributeTextShadowColor: [UIColor clearColor],
@@ -52,10 +54,7 @@
         };
         
         [[UINavigationBar appearance] setTitleTextAttributes:attrs];
-		if ([[UINavigationBar appearance] respondsToSelector:@selector(setShadowImage:)])
-		{
-			[[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
-		}
+		*/
     }
     
     return self;
