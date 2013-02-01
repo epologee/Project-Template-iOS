@@ -1,5 +1,7 @@
 #Project Template iOS
-Xcode Project Template for iOS apps, includes a series of usual libraries via CocoaPods, theming stubs and a folder structure suitable for both small and large projects.
+This repository contains an Xcode Project Template for new iOS apps (currently set to ios 5.1 by default), including a default set of libraries (installed via the CocoaPods project), Apple-esque theming stubs and a folder structure suited for small and large projects alike. The template is compatible with Xcode 4.6.
+
+![Example of the project structure](documentation/example.png "screenshot")
 
 ##How to get started
 1. Make sure you have [CocoaPods](https://github.com/CocoaPods/CocoaPods) installed.
@@ -10,5 +12,11 @@ Xcode Project Template for iOS apps, includes a series of usual libraries via Co
 5. Open the .xcworkspace file from the Finder and hit Xcode's 'run' button.
 6. Create awesome apps.
 
+##Classes/AppDelegate.h & .m
+Unlike Apple's default project setup, I have a preference for putting all Objective-C code in subfolders of a `Classes` folder. All .h and .m files in this template are in (a subfolder of) that Classes folder, but in the .xctemplate plists I couldn't find a way to completely mirror the folder structure in Xcode groups. After step 4. in the 'How to get started' list above, I delete the `Classes`-group and the AppDelegate.h/.m-files manually, to then drag the `Classes` folder the from Finder back into the project. That way the Xcode groups mimic the folder structures, all classes are where they belong and the Xcode groups are linked to their folder counterparts.
+
 ##Theming
-The \*Theme classes in the project template are based on the concept Apple employees explain in the last 20 minutes of the WWDC 2012 presentation 'Advanced Appearance Customization on iOS' ([session 216](https://developer.apple.com/videos/wwdc/2012/?id=216)).
+The \*Theme classes in the project template are based on the WWDC 2012 presentation 'Advanced Appearance Customization on iOS' ([session 216](https://developer.apple.com/videos/wwdc/2012/?id=216)). I'd highly recommend watching that video, especially the last 20 minutes, where the speakers explain how they approached theming the 'Find My Friends' app.
+
+##.gitkeep
+When using git as your versioning control system, it is impossible to add empty folders to the git repository. The .gitkeep files (gitkeep without the dot '.' in the xctemplate directories) you find in the project are there to force git to add the containing directories to the project. You can remove the .gitkeep files from the Xcode project anytime after step 3. See [this StackOverflow post](http://stackoverflow.com/a/7229996/432782) for more information.
