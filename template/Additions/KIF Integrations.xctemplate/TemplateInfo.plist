@@ -59,7 +59,7 @@ end</string>
 							<dict>
 								<key>Group</key>
 								<array>
-									<string>-delete or reimport this group-</string>
+									<string>-delete or reimport these groups-</string>
 									<string>KIF Integration Tests</string>
 								</array>
 								<key>Path</key>
@@ -72,7 +72,7 @@ end</string>
 							<dict>
 								<key>Group</key>
 								<array>
-									<string>-delete or reimport this group-</string>
+									<string>-delete or reimport these groups-</string>
 									<string>KIF Integration Tests</string>
 								</array>
 								<key>Path</key>
@@ -85,7 +85,7 @@ end</string>
 							<dict>
 								<key>Group</key>
 								<array>
-									<string>-delete or reimport this group-</string>
+									<string>-delete or reimport these groups-</string>
 									<string>KIF Integration Tests</string>
 								</array>
 								<key>Path</key>
@@ -98,7 +98,7 @@ end</string>
 							<dict>
 								<key>Group</key>
 								<array>
-									<string>-delete or reimport this group-</string>
+									<string>-delete or reimport these groups-</string>
 									<string>KIF Integration Tests</string>
 								</array>
 								<key>Path</key>

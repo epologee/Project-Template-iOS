@@ -23,7 +23,7 @@
 		<dict>
 			<key>Group</key>
 			<array>
-				<string>-delete or reimport this group-</string>
+				<string>-delete or reimport these groups-</string>
 				<string>CocoaPods</string>
 			</array>
 			<!-- remove from the 'Copy Bundle Resources' build phase --> 

@@ -76,7 +76,7 @@
 						<dict>
 							<key>Group</key>
 							<array>
-								<string>-delete or reimport this group-</string>
+								<string>-delete or reimport these groups-</string>
 								<string>mogenerator</string>
 							</array>
 							<key>Path</key>
