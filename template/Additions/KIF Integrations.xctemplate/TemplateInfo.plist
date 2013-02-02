@@ -47,7 +47,7 @@ end</string>
 							<string>#if RUN_KIF_TESTS
 	#import "KIFTestController.h"
 #endif</string>
-							<key>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:KIFIntegrations</key>
+							<key>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:KIFIntegrations</key>
 							<string>#if RUN_KIF_TESTS
 	[[KIFTestController sharedInstance] startTestingWithCompletionBlock:^{
 		// Exit after the tests complete. When running on CI, this lets you check the return value for pass/fail.

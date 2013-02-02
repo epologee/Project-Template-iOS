@@ -20,15 +20,15 @@
 		<string>___PACKAGENAME___-Info.plist:NSMainNibFile</string>
 		<string>___PACKAGENAME___-Prefix.pch:objC:importFoundation</string>
 		<string>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.h:comments</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.h:import:importCocoa</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.h:class</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.h:ivars</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:window</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:comments</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___AppDelegate.h</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:_window</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.h:comments</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.h:import:importCocoa</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.h:class</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.h:ivars</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:window</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:comments</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___AppDelegate.h</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:_window</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</string>
 		<string>Images/OS/Default.png</string>
 		<string>Images/OS/Default@2x.png</string>
 		<string>Images/OS/Default-568h@2x.png</string>
@@ -141,7 +141,7 @@
 		<string>&lt;key&gt;DataProtectionClass&lt;/key&gt;
 &lt;string&gt;NSFileProtectionComplete&lt;/string&gt;
         </string>
-		<key>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.h:ivars</key>
+		<key>Source/___VARIABLE_classPrefix:identifier___AppDelegate.h:ivars</key>
 		<dict>
 			<key>Beginning</key>
 			<string>@interface ___VARIABLE_classPrefix:identifier___AppDelegate : UIResponder &lt;UIApplicationDelegate&gt;
@@ -149,15 +149,15 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:window</key>
+		<key>Source/___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:window</key>
 		<string>@property (strong, nonatomic) UIWindow *window;
 </string>
-		<key>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m</key>
+		<key>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m</key>
 		<dict>
 			<key>End</key>
 			<string>@end</string>
 		</dict>
-		<key>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation</key>
+		<key>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation</key>
 		<dict>
 			<key>Beginning</key>
 			<string>@implementation ___VARIABLE_classPrefix:identifier___AppDelegate

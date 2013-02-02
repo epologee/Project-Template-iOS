@@ -15,20 +15,20 @@
 	<key>Nodes</key>
 	<array>
 		<string>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:3</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:runKIFTests</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___RootViewController.h</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:createWindow</string>
-		<string>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:KIFIntegrations</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:runKIFTests</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___RootViewController.h</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:createWindow</string>
+		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:KIFIntegrations</string>
 		<string>en.lproj/Localizable.strings</string>
-		<string>Classes/Localization/___VARIABLE_classPrefix:identifier___LocalizedStrings.h</string>
-		<string>Classes/Base/___VARIABLE_classPrefix:identifier___BaseViewController.h</string>
-		<string>Classes/Base/___VARIABLE_classPrefix:identifier___BaseViewController.m</string>
-		<string>Classes/Root/___VARIABLE_classPrefix:identifier___RootViewController.h</string>
-		<string>Classes/Root/___VARIABLE_classPrefix:identifier___RootViewController.m</string>
+		<string>Source/Localization/___VARIABLE_classPrefix:identifier___LocalizedStrings.h</string>
+		<string>Source/Base/___VARIABLE_classPrefix:identifier___BaseViewController.h</string>
+		<string>Source/Base/___VARIABLE_classPrefix:identifier___BaseViewController.m</string>
+		<string>Source/Root/___VARIABLE_classPrefix:identifier___RootViewController.h</string>
+		<string>Source/Root/___VARIABLE_classPrefix:identifier___RootViewController.m</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions</key>
+		<key>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions</key>
 		<dict>
 			<key>Beginning</key>
 			<string>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -42,7 +42,7 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>Classes/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:createWindow</key>
+		<key>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:createWindow</key>
 		<string>___VARIABLE_classPrefix:identifier___RootViewController *rootViewController = [[___VARIABLE_classPrefix:identifier___RootViewController alloc] init];
 UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
 
@@ -59,51 +59,51 @@ self.window.rootViewController = navigationController;
 			<key>Path</key>
 			<string>Localizable.strings</string>
 		</dict>
-		<key>Classes/Localization/___VARIABLE_classPrefix:identifier___LocalizedStrings.h</key>
+		<key>Source/Localization/___VARIABLE_classPrefix:identifier___LocalizedStrings.h</key>
 		<dict>
 			<key>Group</key>
 			<array>
-				<string>Classes</string>
+				<string>Source</string>
 				<string>Localization</string>
 			</array>
 			<key>Path</key>
 			<string>LocalizedStrings.h</string>
 		</dict>
-		<key>Classes/Base/___VARIABLE_classPrefix:identifier___BaseViewController.h</key>
+		<key>Source/Base/___VARIABLE_classPrefix:identifier___BaseViewController.h</key>
 		<dict>
 			<key>Group</key>
 			<array>
-				<string>Classes</string>
+				<string>Source</string>
 				<string>Base</string>
 			</array>
 			<key>Path</key>
 			<string>BaseViewController.h</string>
 		</dict>
-		<key>Classes/Base/___VARIABLE_classPrefix:identifier___BaseViewController.m</key>
+		<key>Source/Base/___VARIABLE_classPrefix:identifier___BaseViewController.m</key>
 		<dict>
 			<key>Group</key>
 			<array>
-				<string>Classes</string>
+				<string>Source</string>
 				<string>Base</string>
 			</array>
 			<key>Path</key>
 			<string>BaseViewController.m</string>
 		</dict>
-		<key>Classes/Root/___VARIABLE_classPrefix:identifier___RootViewController.h</key>
+		<key>Source/Root/___VARIABLE_classPrefix:identifier___RootViewController.h</key>
 		<dict>
 			<key>Group</key>
 			<array>
-				<string>Classes</string>
+				<string>Source</string>
 				<string>Root</string>
 			</array>
 			<key>Path</key>
 			<string>RootViewController.h</string>
 		</dict>
-		<key>Classes/Root/___VARIABLE_classPrefix:identifier___RootViewController.m</key>
+		<key>Source/Root/___VARIABLE_classPrefix:identifier___RootViewController.m</key>
 		<dict>
 			<key>Group</key>
 			<array>
-				<string>Classes</string>
+				<string>Source</string>
 				<string>Root</string>
 			</array>
 			<key>Path</key>

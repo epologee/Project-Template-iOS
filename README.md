@@ -12,8 +12,8 @@ This repository contains an Xcode Project Template for new iOS apps (currently s
 5. Open the .xcworkspace file from the Finder and hit Xcode's 'run' button.
 6. Create awesome apps.
 
-##Classes/AppDelegate.h & .m
-Unlike Apple's default project setup, I have a preference for putting all Objective-C code in subfolders of a `Classes` folder. All .h and .m files in this template are in (a subfolder of) that Classes folder, but in the .xctemplate plists I couldn't find a way to completely mirror the folder structure in Xcode groups. After step 4. in the 'How to get started' list above, I delete the `Classes`-group and the AppDelegate.h/.m-files manually, to then drag the `Classes` folder the from Finder back into the project. That way the Xcode groups mimic the folder structures, all classes are where they belong and the Xcode groups are linked to their folder counterparts.
+##Source/AppDelegate.h & .m
+Unlike Apple's default project setup, I have a preference for putting all Objective-C code in subfolders of a `Source` folder. All .h and .m files in this template are in (a subfolder of) that Source folder, but in the .xctemplate plists I couldn't find a way to completely mirror the folder structure in Xcode groups. After step 4. in the 'How to get started' list above, I delete the `Source`-group and the AppDelegate.h/.m-files manually, to then drag the `Source` folder the from Finder back into the project. That way the Xcode groups mimic the folder structures, all classes are where they belong and the Xcode groups are linked to their folder counterparts.
 
 ##Theming
 The \*Theme classes in the project template are based on the WWDC 2012 presentation 'Advanced Appearance Customization on iOS' ([session 216](https://developer.apple.com/videos/wwdc/2012/?id=216)). I'd highly recommend watching that video, especially the last 20 minutes, where the speakers explain how they approached theming the 'Find My Friends' app.
