@@ -15,6 +15,7 @@
 	<key>Nodes</key>
 	<array>
 		<string>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:3</string>
+		<string>../.gitignore</string>
 		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:runKIFTests</string>
 		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___RootViewController.h</string>
 		<string>Source/___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:createWindow</string>
@@ -52,6 +53,25 @@ self.window.rootViewController = navigationController;
 [self.window makeKeyAndVisible];
 
 </string>
+		<key>../.gitignore</key>
+		<dict>
+			<key>Beginning</key>
+			<string># Xcode
+xcuserdata
+
+# AppCode
+.idea
+
+# OSX
+.DS_Store</string>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Group</key>
+			<array>
+				<string>-delete or reimport this group-</string>
+				<string>git</string>
+			</array>
+		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>Group</key>
