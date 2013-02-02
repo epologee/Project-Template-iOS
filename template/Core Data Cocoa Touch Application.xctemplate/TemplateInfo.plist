@@ -32,8 +32,8 @@
 					<key>Nodes</key>
 					<array>
 						<string>Source/Model/___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
-						<string>Source/Model/___VARIABLE_classPrefix:identifier___CoreDataProxy.h</string>
-						<string>Source/Model/___VARIABLE_classPrefix:identifier___CoreDataProxy.m</string>
+						<string>Source/Model/___VARIABLE_classPrefix:identifier___PersistenceProxy.h</string>
+						<string>Source/Model/___VARIABLE_classPrefix:identifier___PersistenceProxy.m</string>
 						<string>../generate_classes.sh</string>
 						<string>___PACKAGENAME___-Prefix.pch:objC:importCoreData</string>
 						<string>Source/Model/Entities/AbstractEntities/.gitkeep</string>
@@ -52,7 +52,7 @@
 							<key>Path</key>
 							<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
 						</dict>
-						<key>Source/Model/___VARIABLE_classPrefix:identifier___CoreDataProxy.h</key>
+						<key>Source/Model/___VARIABLE_classPrefix:identifier___PersistenceProxy.h</key>
 						<dict>
 							<key>Group</key>
 							<array>
@@ -60,9 +60,9 @@
 								<string>Model</string>
 							</array>
 							<key>Path</key>
-							<string>CoreDataProxy.h</string>
+							<string>PersistenceProxy.h</string>
 						</dict>
-						<key>Source/Model/___VARIABLE_classPrefix:identifier___CoreDataProxy.m</key>
+						<key>Source/Model/___VARIABLE_classPrefix:identifier___PersistenceProxy.m</key>
 						<dict>
 							<key>Group</key>
 							<array>
@@ -70,7 +70,7 @@
 								<string>Model</string>
 							</array>
 							<key>Path</key>
-							<string>CoreDataProxy.m</string>
+							<string>PersistenceProxy.m</string>
 						</dict>
 						<key>../generate_classes.sh</key>
 						<dict>
