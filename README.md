@@ -6,7 +6,11 @@ This repository contains an Xcode Project Template for new iOS apps (currently s
 ##How to get started
 1. Make sure you have [CocoaPods](https://github.com/CocoaPods/CocoaPods) installed.
 1. Clone this repository into a location of your choosing, like your projects folder.
-2. Create a symbolic link from the enclosed directory 'template' to your library's project templates folder in the terminal: `ln -s '/Users/*USER*/*path-to-repository*/Project-Template-iOS/template' '/Users/*USER*/Library/Developer/Xcode/Templates/Application/Project Templates/Application by epologee'` - note: substitute the `*USER*` parts with your own username and check that the path to the template folder is correct. Type `pwd` into the terminal if you're unsure, *do not use the tilde (`~`)*. The last part of the library path will show up in Xcode as the name of the template, in this case 'Application by epologee'.
+2. Create a symbolic link from the enclosed directory 'template' to your library's project templates folder in the terminal: 
+
+	`ln -s '/Users/*USER*/*path-to-repository*/Project-Template-iOS/template' '/Users/*USER*/Library/Developer/Xcode/Templates/Application/Project Templates/Application by epologee'`
+	
+	Note: substitute the `*USER*` parts with your own username and check that the path to the template folder is correct. Type `pwd` into the terminal if you're unsure, *do not use the tilde (`~`)*. The last part of the library path will show up in Xcode as the name of the template, in this case 'Application by epologee'.
 3. Create a new Xcode project and choose the 'Application' icon in the 'Application by epologee' section. Fill out the necessaries, pick whether you want Core Data included and don't forget to enter a nice and catchy class prefix.
 4. Close the project after Xcode finishes its creation, then go to the terminal and `cd` to your new project folder. Type `pod install` and watch CocoaPods perform magic.
 5. Open the .xcworkspace file from the Finder and hit Xcode's 'run' button.
@@ -28,3 +32,8 @@ You need to manually duplicate your main target, suffix it with ' Integrations' 
 			
 When all this is done, run 'pod install' or 'pod update' and your integration testing is ready to go.
 I have a [Stack Overflow question](http://stackoverflow.com/q/14651166/432782) going to get to the bottom of automating this, but for now a little handiwork is involved.
+
+##Core Data support with mogenerator
+Apple's original implementation of the Core Data stack served fine for example projects, tutorials and the likes, but in my opinion the app delegate is not the place to contain this much knowledge about Core Data. If you enable Core Data when creating projects with this template, you'll get one `__CoreDataProxy` class that extends the `AbstractCoreDataProxy` class from the [TwelveTwentyToolkit/CoreData framework](https://github.com/TwelveTwenty/TwelveTwentyToolkit-ObjC/tree/master/TwelveTwentyToolkit/CoreData). It also adds a `generate_classes.sh` shell script to the project's root folder, that uses [mogenerator](http://rentzsch.github.com/mogenerator) to generate your Core Data entity classes. Call this from the terminal after you add a few entities with the Core Data model tool:
+
+    sh generate_classes.sh

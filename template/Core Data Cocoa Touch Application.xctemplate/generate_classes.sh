@@ -1,0 +1,2 @@
+# Call this shell script from the terminal: `sh generate_classes.sh` or add the execution bit `chmod +x generate_classes.sh` so you can call `./generate_classes.sh`
+mogenerator --template-var arc=true  -m ./___PACKAGENAME___/Source/Model/___PACKAGENAMEASIDENTIFIER___.xcdatamodeld/___PACKAGENAMEASIDENTIFIER___.xcdatamodel --machine-dir ./___PACKAGENAME___/Source/Model/Entities/AbstractEntities --human-dir ./___PACKAGENAME___/Source/Model/Entities

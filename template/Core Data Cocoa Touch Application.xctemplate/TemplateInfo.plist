@@ -31,17 +31,24 @@
 				<dict>
 					<key>Nodes</key>
 					<array>
-						<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
+						<string>Source/Model/___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
 						<string>Source/Model/___VARIABLE_classPrefix:identifier___CoreDataProxy.h</string>
 						<string>Source/Model/___VARIABLE_classPrefix:identifier___CoreDataProxy.m</string>
+						<string>../generate_classes.sh</string>
 						<string>___PACKAGENAME___-Prefix.pch:objC:importCoreData</string>
+						<string>Source/Model/Entities/AbstractEntities/.gitkeep</string>
 					</array>
 					<key>Definitions</key>
 					<dict>
 						<key>../Podfile:coreData</key>
 						<string>pod 'TwelveTwentyToolkit/CoreData'</string>
-						<key>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</key>
+						<key>Source/Model/___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</key>
 						<dict>
+							<key>Group</key>
+							<array>
+								<string>Source</string>
+								<string>Model</string>
+							</array>
 							<key>Path</key>
 							<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
 						</dict>
@@ -64,6 +71,30 @@
 							</array>
 							<key>Path</key>
 							<string>CoreDataProxy.m</string>
+						</dict>
+						<key>../generate_classes.sh</key>
+						<dict>
+							<key>Group</key>
+							<array>
+								<string>-delete or reimport this group-</string>
+								<string>mogenerator</string>
+							</array>
+							<key>Path</key>
+							<string>generate_classes.sh</string>
+						</dict>
+						<key>Source/Model/Entities/AbstractEntities/.gitkeep</key>
+						<dict>
+							<key>Group</key>
+							<array>
+								<string>Source</string>
+								<string>Model</string>
+								<string>Entities</string>
+								<string>AbstractEntities</string>
+							</array>
+							<key>Path</key>
+							<string>gitkeep</string>
+							<key>TargetIndices</key>
+							<array/>
 						</dict>
 						<key>___PACKAGENAME___-Prefix.pch:objC:importCoreData</key>
 						<string>#import &lt;CoreData/CoreData.h&gt;</string>
