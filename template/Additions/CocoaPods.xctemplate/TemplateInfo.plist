@@ -14,6 +14,7 @@
 		<string>../Podfile</string>
 		<string>../Podfile:platform</string>
 		<string>../Podfile:defaults</string>
+		<string>../Podfile:coreData</string>
 		<string>../Podfile:integrationsKIF</string>
 	</array>
 	<key>Definitions</key>
