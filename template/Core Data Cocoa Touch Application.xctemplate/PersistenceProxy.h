@@ -3,6 +3,6 @@
 
 @interface ___VARIABLE_classPrefix:identifier___PersistenceProxy : TTAbstractPersistenceProxy
 
-+(___VARIABLE_classPrefix:identifier___PersistenceProxy *)sharedProxy;
++ (___VARIABLE_classPrefix:identifier___PersistenceProxy *)sharedProxy;
 
 @end
