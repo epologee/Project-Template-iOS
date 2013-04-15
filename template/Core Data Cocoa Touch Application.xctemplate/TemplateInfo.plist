@@ -41,7 +41,8 @@
 					<key>Definitions</key>
 					<dict>
 						<key>../Podfile:coreData</key>
-						<string>pod 'TwelveTwentyToolkit/CoreData'</string>
+						<string>pod 'TwelveTwentyToolkit/CoreData'
+pod 'TwelveTwentyToolkit/Persistence'</string>
 						<key>Source/Model/___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</key>
 						<dict>
 							<key>Group</key>

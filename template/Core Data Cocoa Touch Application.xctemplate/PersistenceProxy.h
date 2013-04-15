@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
-#import "TTAbstractPersistenceProxy.h"
+#import "TTTAbstractPersistenceProxy.h"
 
-@interface ___VARIABLE_classPrefix:identifier___PersistenceProxy : TTAbstractPersistenceProxy
+@interface ___VARIABLE_classPrefix:identifier___PersistenceProxy : TTTAbstractPersistenceProxy
 
 + (___VARIABLE_classPrefix:identifier___PersistenceProxy *)sharedProxy;
 
