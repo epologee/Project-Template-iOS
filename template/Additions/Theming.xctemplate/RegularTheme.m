@@ -1,4 +1,5 @@
-#import "TTLog.h"
+#import "TTTLog.h"
+#import "NSObject+TTTBlocks.h"
 #import "___VARIABLE_classPrefix:identifier___RegularTheme.h"
 
 #define ___VARIABLE_classPrefix:identifier___AttributeTextAlignment @"___VARIABLE_classPrefix:identifier___AttributeTextAlignment"
@@ -121,25 +122,25 @@
 
 	NSDictionary *attributes = [self attributesForTextStyle:style forControlState:controlState];
 
-	[attributes forAttribute:UITextAttributeFont performBlock:^(id value) {label.font = value;}];
-	[attributes forAttribute:UITextAttributeTextColor performBlock:^(id value) {label.textColor = value;}];
-	[attributes forAttribute:UITextAttributeTextShadowColor performBlock:^(id value) {label.shadowColor = value;}];
-	[attributes forAttribute:UITextAttributeTextShadowOffset performBlock:^(id value) {label.shadowOffset = [self UIOffsetValueToCGSize:value];}];
-	[attributes forAttribute:___VARIABLE_classPrefix:identifier___AttributeTextAlignment performBlock:^(id value) {label.textAlignment = [value integerValue];}];
-	[attributes forAttribute:___VARIABLE_classPrefix:identifier___AttributeLineBreakMode performBlock:^(id value) {
+	[attributes tttForKey:UITextAttributeFont performBlock:^(id value) {label.font = value;}];
+	[attributes tttForKey:UITextAttributeTextColor performBlock:^(id value) {label.textColor = value;}];
+	[attributes tttForKey:UITextAttributeTextShadowColor performBlock:^(id value) {label.shadowColor = value;}];
+	[attributes tttForKey:UITextAttributeTextShadowOffset performBlock:^(id value) {label.shadowOffset = [self UIOffsetValueToCGSize:value];}];
+	[attributes tttForKey:___VARIABLE_classPrefix:identifier___AttributeTextAlignment performBlock:^(id value) {label.textAlignment = [value integerValue];}];
+	[attributes tttForKey:___VARIABLE_classPrefix:identifier___AttributeLineBreakMode performBlock:^(id value) {
 		label.lineBreakMode = [value integerValue];
 		label.numberOfLines = 0;
 	}];
-	[attributes forAttribute:___VARIABLE_classPrefix:identifier___AttributeNumberOfLines performBlock:^(id value) {label.numberOfLines = [value integerValue];}];
+	[attributes tttForKey:___VARIABLE_classPrefix:identifier___AttributeNumberOfLines performBlock:^(id value) {label.numberOfLines = [value integerValue];}];
 }
 
 - (void)applyTextStyle:(___VARIABLE_classPrefix:identifier___TextStyle)style toTextField:(UITextField *)textField
 {
 	NSDictionary *attributes = [self attributesForTextStyle:style forControlState:UIControlStateNormal];
 
-	[attributes forAttribute:UITextAttributeFont performBlock:^(id value) {textField.font = value;}];
-	[attributes forAttribute:UITextAttributeTextColor performBlock:^(id value) {textField.textColor = value;}];
-	[attributes forAttribute:___VARIABLE_classPrefix:identifier___AttributeTextAlignment performBlock:^(id value) {textField.textAlignment = [value integerValue];}];
+	[attributes tttForKey:UITextAttributeFont performBlock:^(id value) {textField.font = value;}];
+	[attributes tttForKey:UITextAttributeTextColor performBlock:^(id value) {textField.textColor = value;}];
+	[attributes tttForKey:___VARIABLE_classPrefix:identifier___AttributeTextAlignment performBlock:^(id value) {textField.textAlignment = [value integerValue];}];
 }
 
 - (void)applyButtonStyle:(___VARIABLE_classPrefix:identifier___ButtonStyle)style toButton:(UIButton *)button
@@ -151,15 +152,15 @@
 		NSInteger controlState = [controlStateNumber integerValue];
 		NSDictionary *buttonAttributes = [self attributesForButtonStyle:style withControlState:controlState];
 
-		[buttonAttributes forAttribute:___VARIABLE_classPrefix:identifier___AttributeTextStyle performBlock:^(id value) {[self applyTextStyle:[value integerValue] toLabel:button.titleLabel forControlState:controlState];}];
-		[buttonAttributes forAttribute:___VARIABLE_classPrefix:identifier___AttributeBackgroundImage performBlock:^(id value) {[button setBackgroundImage:value forState:controlState];}];
-		[buttonAttributes forAttribute:___VARIABLE_classPrefix:identifier___AttributeTitleColor performBlock:^(id value) {[button setTitleColor:value forState:controlState];}];
+		[buttonAttributes tttForKey:___VARIABLE_classPrefix:identifier___AttributeTextStyle performBlock:^(id value) {[self applyTextStyle:[value integerValue] toLabel:button.titleLabel forControlState:controlState];}];
+		[buttonAttributes tttForKey:___VARIABLE_classPrefix:identifier___AttributeBackgroundImage performBlock:^(id value) {[button setBackgroundImage:value forState:controlState];}];
+		[buttonAttributes tttForKey:___VARIABLE_classPrefix:identifier___AttributeTitleColor performBlock:^(id value) {[button setTitleColor:value forState:controlState];}];
 
 		if (controlState == UIControlStateNormal)
 		{
-			[buttonAttributes forAttribute:___VARIABLE_classPrefix:identifier___AttributeBackgroundColor performBlock:^(id value) {button.backgroundColor = value;}];
-			[buttonAttributes forAttribute:___VARIABLE_classPrefix:identifier___AttributeTitleEdgeInsets performBlock:^(id value) {[button setTitleEdgeInsets:[value UIEdgeInsetsValue]];}];
-			[buttonAttributes forAttribute:___VARIABLE_classPrefix:identifier___AttributeContentHorizontalAlignment performBlock:^(id value) {[button setContentHorizontalAlignment:[value integerValue]];}];
+			[buttonAttributes tttForKey:___VARIABLE_classPrefix:identifier___AttributeBackgroundColor performBlock:^(id value) {button.backgroundColor = value;}];
+			[buttonAttributes tttForKey:___VARIABLE_classPrefix:identifier___AttributeTitleEdgeInsets performBlock:^(id value) {[button setTitleEdgeInsets:[value UIEdgeInsetsValue]];}];
+			[buttonAttributes tttForKey:___VARIABLE_classPrefix:identifier___AttributeContentHorizontalAlignment performBlock:^(id value) {[button setContentHorizontalAlignment:[value integerValue]];}];
 		}
 	}
 }
